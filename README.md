@@ -19,7 +19,6 @@ SF Id. |  Name   |    Features    |
 -------|---------|----------------|
 `261648` | Nalin Bharathi Easwaramoorthy  | Feature X, Y, Z
 
-##Learning Resources
+## Learning Resources
 
 1.[markdownBasics](https://guides.github.com/features/mastering-markdown/)
-2.
