@@ -21,4 +21,4 @@ SF Id. |  Name   |    Features    |
 
 ## Learning Resources
 
-1.[markdownBasics](https://guides.github.com/features/mastering-markdown/)
+1.[Basics of markdown](https://guides.github.com/features/mastering-markdown/)
