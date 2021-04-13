@@ -17,7 +17,9 @@ Folder             | Description
 
 SF Id. |  Name   |    Features    | 
 -------|---------|----------------|
-`261648` | Nalin Bharathi Easwaramoorthy  | Feature X, Y, Z
+`261648` | Nalin Bharathi Easwaramoorthy  | Caesar Cipher
+|||Vigenere Cipher
+|||Playfair Cipher
 
 ## Learning Resources
 
