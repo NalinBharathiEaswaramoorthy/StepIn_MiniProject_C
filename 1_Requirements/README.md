@@ -55,6 +55,9 @@ This ciphering technique treats every two letters of the plaintext as a block an
 | H02 | Vigenere Cipher: Plain text to Cipher text | Technical | TBI |
 | H03 | Playfair cipher: Plain text to Cipher text | Technical | TBI | 
 
+![H01](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/H01.jpg)
+![H02](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/H02.jpg)
+
 ##  Low level Requirements:
 | ID | Description | HLR ID | Status |
 | ----- | ----- | ------- | ---------|
@@ -63,3 +66,6 @@ This ciphering technique treats every two letters of the plaintext as a block an
 | L03 | Each character of plaintext is incremented by key value of corresponding matched character | H02 | TBI |
 | L04 | Number of characters in plaintext is made even by padding with Z and two consecutive identical letters are separated by X  | H03 | TBI |
 | L05 | Generate key matrix and match digraphs to corresponding cipher text | H03 | TBI |
+
+![L04](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/L04.jpg)
+![L05](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/L05.jpg)
