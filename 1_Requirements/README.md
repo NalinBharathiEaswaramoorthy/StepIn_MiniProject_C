@@ -26,3 +26,6 @@ This ciphering technique treats every two letters of the plaintext as a block an
 | Time | Feature | Cost |
 | ----- | ----- | ----- |
 |   X   |   Y   |   Z   |
+
+## SWOT ANALYSIS
+![SWOT Analysis](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/SWOT.png)
