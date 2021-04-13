@@ -29,3 +29,37 @@ This ciphering technique treats every two letters of the plaintext as a block an
 
 ## SWOT ANALYSIS
 ![SWOT Analysis](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/SWOT.png)
+
+## 4W's & 1H
+
+### Who:
+* Anybody interested in encoding and decoding messages/cryptography
+
+### What:
+* Quickly encrypts messages accurately. It is more reliable than manual encryption that is tedious and error prone
+
+### When:
+* Substitution cipher was first used in 80 BCE by Julius Caesar and is still used in modern day cryptography techniques such as AES. 
+
+### Why:
+* Information security,integrity and secrecy are ever prevalent needs in almost every domain.
+
+### How:
+* This program takes the message and key as inputs that are processed as per the selected ciphering technique to provide the corresponding cipher text output
+
+# Detail requirements
+## High Level Requirements: 
+| ID | Description | Category | Status | 
+| ----- | ----- | ------- | ---------|
+| H01 | Caesar Cipher: Plain text to Cipher text | Technical | TBI | 
+| H02 | Vigenere Cipher: Plain text to Cipher text | Technical | TBI |
+| H03 | Playfair cipher: Plain text to Cipher text | Technical | TBI | 
+
+##  Low level Requirements:
+| ID | Description | HLR ID | Status |
+| ----- | ----- | ------- | ---------|
+| L01 | Each character of plaintext is incremented by key value  | H01 | TBI |
+| L02 | Each character of plaintext is matched to a character in the key word  | H02 | TBI |
+| L03 | Each character of plaintext is incremented by key value of corresponding matched character | H02 | TBI |
+| L04 | Number of characters in plaintext is made even by padding with Z and two consecutive identical letters are separated by X  | H03 | TBI |
+| L05 | Generate key matrix and match digraphs to corresponding cipher text | H03 | TBI |
