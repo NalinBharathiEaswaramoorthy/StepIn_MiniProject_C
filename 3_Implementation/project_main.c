@@ -1,103 +1,97 @@
-#include <calculator_operations.h>
+#include "cipher.h"
 
 /* Status of the operation requested */
 #define VALID   (1)
 #define INVALID (0)
 
-/* Calculator operation requested by user*/
-unsigned int calculator_operation = 0;
+/* Cipher technique requested by user*/
+unsigned int cipher_operation = 0;
 
-/* Operands on which calculation is performed */
-int calculator_operand1 = 0;
-int calculator_operand2 = 0;
+/* Cipher technique arguments */
+message input_data;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, EXIT };
+enum operations{ CAESAR_C=1, VIGENERE_C, PLAYFAIR_C, EXIT };
 
-/* Display the menu of operations supported */
-void calculator_menu(void);
-/* Verifies the requested operations validity */
+/* Display the menu of techniques supported */
+void cipher_menu(void);
+/* Verifies the requested technique validity */
 int valid_operation(int operation);
 
 
 /* Start of the application */
 int main(int argc, char *argv[])
 {
-    printf("\n****Calculator****\n");
+    printf("\n****Cipher Generator****\n");
     while(1)
     {
-        calculator_menu();
+        cipher_menu();
     }
 }
 
-void calculator_menu(void)
+void cipher_menu(void)
 {
-    printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Exit");
-    printf("\n\tEnter your choice\n");
+    printf("\nAvailable Ciphering Techniques\n");
+    printf("\n1. Caesar Cipher\n2. Vigenere Cipher\n3. Playfair Cipher\n4. Exit\n");
+    printf("Enter your choice\n");
    
      __fpurge(stdin);
-    scanf("%d", &calculator_operation);
+    scanf("%d", &cipher_operation);
 
-    if(EXIT == calculator_operation)
+    if(EXIT == cipher_operation)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
     }
 
-    if(INVALID != valid_operation(calculator_operation))
+    if(INVALID != valid_operation(cipher_operation))
     {
-        printf("\n\tEnter your Numbers with space between them\n");
+        printf("\nEnter your message\n");
         __fpurge(stdin);
-        scanf("%d %d", &calculator_operand1, &calculator_operand2);
+        fgets(input_data.plain_text,100,stdin);
+        if(cipher_operation==1)
+        {
+            printf("Enter the key number\n");
+            scanf("%d",&input_data.k);
+        }
+        else
+        {
+            printf("Enter the keyword\n");
+            fgets(input_data.key,15,stdin);
+        }
     }
     else
     {
-        printf("\n\t---Wrong choice---\nEnter to continue\n");
+        printf("\n\t---Incorrect choice---\nEnter to continue\n");
         __fpurge(stdin);
         getchar();
         return;
         
     }
-    switch(calculator_operation)
+    switch(cipher_operation)
     {
-        case ADD:
-            printf("\n\t%d + %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            add(calculator_operand1, calculator_operand2));
+        case CAESAR_C:
+            input_data = Caesar_Cipher(input_data);
+            printf("Plain text\n");
+            fputs(input_data.plain_text,stdout);
+            printf("Cipher Text\n");
+            fputs(input_data.cipher_text,stdout);
+            __fpurge(stdin);
+            getchar();
+            break;
+            /*
+        case VIGENERE_C:
             
             __fpurge(stdin);
             getchar();
             break;
-        case SUBTRACT:
-            printf("\n\t%d - %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            subtract(calculator_operand1, calculator_operand2));
-            
+        case PLAYFAIR_C:
+
             __fpurge(stdin);
             getchar();
             break;
-        case MULTIPLY:
-            printf("\n\t%d * %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            multiply(calculator_operand1, calculator_operand2));
-            
-            __fpurge(stdin);
-            getchar();
-            break;
-        case DIVIDE:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            divide(calculator_operand1, calculator_operand2));
-            
-            __fpurge(stdin);
-            getchar();
-            break;
-        case 5:
+            */
+        case 4:
             exit(0);
             break;
         default:
@@ -108,5 +102,5 @@ void calculator_menu(void)
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
+    return ((CAESAR_C <= operation) && (EXIT >= operation)) ? VALID: INVALID;
 }
