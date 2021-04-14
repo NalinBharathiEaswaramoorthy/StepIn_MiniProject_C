@@ -69,11 +69,8 @@ message Vigenere_Cipher(message input_data)
     return input_data;
 }
 
-/*
+
 message Playfair_Cipher(message input_data)
 {
 
 }
-*/
-
-//ALPNFHDJAFVKCLATIC

@@ -30,7 +30,7 @@ union{
  * @brief 
  * 
  * @param input_data 
- * @return message* 
+ * @return message
  */
 message Caesar_Cipher(message input_data);
 
@@ -38,7 +38,7 @@ message Caesar_Cipher(message input_data);
  * @brief 
  * 
  * @param input_data 
- * @return message* 
+ * @return message
  */
 
 message Vigenere_Cipher(message input_data);
@@ -61,10 +61,10 @@ void remove_space(char *s);
  * @brief 
  * 
  * @param input_data 
- * @return message* 
+ * @return message 
  */
 
-//message Playfair_Cipher(message input_data);
+message Playfair_Cipher(message input_data);
 
 #endif 
 /* #define __CIPHER_H__ */
