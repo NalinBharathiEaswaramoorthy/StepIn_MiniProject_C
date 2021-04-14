@@ -79,18 +79,23 @@ void cipher_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-            /*
-        case VIGENERE_C:
             
+        case VIGENERE_C:
+            input_data = Vigenere_Cipher(input_data);
+            printf("Plain text\n");
+            fputs(input_data.plain_text,stdout);
+            printf("Cipher Text\n");
+            fputs(input_data.cipher_text,stdout);
             __fpurge(stdin);
             getchar();
             break;
+        /*
         case PLAYFAIR_C:
 
             __fpurge(stdin);
             getchar();
             break;
-            */
+        */
         case 4:
             exit(0);
             break;

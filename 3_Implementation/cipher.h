@@ -41,7 +41,21 @@ message Caesar_Cipher(message input_data);
  * @return message* 
  */
 
-//message Vigenere_Cipher(message input_data);
+message Vigenere_Cipher(message input_data);
+
+/**
+ * @brief 
+ * 
+ * @param s 
+ */
+void strupr ( char *s );
+
+/**
+ * @brief 
+ * 
+ * @param s 
+ */
+void remove_space(char *s);
 
 /**
  * @brief 
@@ -49,6 +63,7 @@ message Caesar_Cipher(message input_data);
  * @param input_data 
  * @return message* 
  */
+
 //message Playfair_Cipher(message input_data);
 
 #endif 

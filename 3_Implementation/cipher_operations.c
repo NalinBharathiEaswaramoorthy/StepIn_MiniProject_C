@@ -24,14 +24,56 @@ message Caesar_Cipher(message input_data)
     }
     return input_data;
 }
-/*
-message Vigenere_Cipher(message input_data)
+
+void remove_space(char *s)
 {
-    
+	int i = 0, j = 0;
+	while (s[i])
+	{
+		if (s[i] != ' ')
+        s[j++] = s[i];
+		i++;
+	}
+	s[j] = '\0';
 }
 
+void strupr ( char *s )
+{
+    while( *s )
+    {
+        *s=toupper( *s );
+        s++;
+    }
+}
+
+message Vigenere_Cipher(message input_data)
+{
+    remove_space(input_data.plain_text);
+    remove_space(input_data.key);
+    strupr(input_data.plain_text);
+    strupr(input_data.key);
+    int pt_length = strlen(input_data.plain_text)-1; //-1 to remove the \n character added by fgets
+    int kw_length = strlen(input_data.key)-1,i,j;
+    if(kw_length > pt_length)
+    exit(2);
+    char new_kw[pt_length];
+    for(i=0,j=0 ; i < pt_length; i++,j++){
+        if(kw_length==j)
+        j = 0;
+        new_kw[i] = input_data.key[j];
+    } 
+    new_kw[i]='\0';
+    for(i=0;i<pt_length;i++)
+    input_data.cipher_text[i] = ((input_data.plain_text[i] + new_kw[i]) % 26 + 65);
+    input_data.cipher_text[i]='\0';
+    return input_data;
+}
+
+/*
 message Playfair_Cipher(message input_data)
 {
 
 }
 */
+
+//ALPNFHDJAFVKCLATIC
