@@ -72,6 +72,8 @@ message Vigenere_Cipher(message input_data)
 
 message Playfair_Cipher(message input_data)
 {
-   strcpy(input_data.cipher_text,"Sorry! Feature Under Construction");
-   return input_data;
+    remove_space(input_data.key);
+    strupr(input_data.key);
+    strcpy(input_data.cipher_text,"Sorry! Feature Under Construction");
+    return input_data;
 }
