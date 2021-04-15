@@ -25,24 +25,24 @@ message Caesar_Cipher(message input_data)
     return input_data;
 }
 
-void remove_space(char *s)
+void remove_space(char *string)
 {
 	int i = 0, j = 0;
-	while (s[i])
+	while (string[i])
 	{
-		if (s[i] != ' ')
-        s[j++] = s[i];
+		if (string[i] != ' ')
+        string[j++] = string[i];
 		i++;
 	}
-	s[j] = '\0';
+	string[j] = '\0';
 }
 
-void strupr ( char *s )
+void strupr ( char *string )
 {
-    while( *s )
+    while( *string )
     {
-        *s=toupper( *s );
-        s++;
+        *string=toupper( *string );
+        string++;
     }
 }
 
@@ -72,5 +72,6 @@ message Vigenere_Cipher(message input_data)
 
 message Playfair_Cipher(message input_data)
 {
-
+   strcpy(input_data.cipher_text,"Sorry! Feature Under Construction");
+   return input_data;
 }

@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 void cipher_menu(void)
 {
     printf("\nAvailable Ciphering Techniques\n");
-    printf("\n1. Caesar Cipher\n2. Vigenere Cipher\n3. Playfair Cipher\n4. Exit\n");
+    printf("\n1. Caesar Cipher\n2. Vigenere Cipher\n3. Playfair Cipher(Under Construction)\n4. Exit\n");
     printf("Enter your choice\n");
    
      __fpurge(stdin);
@@ -89,13 +89,16 @@ void cipher_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        /*
+        
         case PLAYFAIR_C:
-
+            input_data = Playfair_Cipher(input_data);
+            printf("Plain text\n");
+            fputs(input_data.plain_text,stdout);
+            fputs(input_data.cipher_text,stdout);
             __fpurge(stdin);
             getchar();
             break;
-        */
+        
         case 4:
             exit(0);
             break;

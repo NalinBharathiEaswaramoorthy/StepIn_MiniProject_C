@@ -48,14 +48,14 @@ message Vigenere_Cipher(message input_data);
  * 
  * @param s 
  */
-void strupr ( char *s );
+void strupr ( char *string );
 
 /**
  * @brief 
  * 
  * @param s 
  */
-void remove_space(char *s);
+void remove_space(char *string);
 
 /**
  * @brief 
