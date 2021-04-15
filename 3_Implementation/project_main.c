@@ -20,13 +20,14 @@ int valid_operation(int operation);
 
 
 /* Start of the application */
-int main(int argc, char *argv[])
+int main()
 {
     printf("\n****Cipher Generator****\n");
     while(1)
     {
         cipher_menu();
     }
+    return 0;
 }
 
 void cipher_menu(void)

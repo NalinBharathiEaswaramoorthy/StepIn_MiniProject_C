@@ -2,6 +2,7 @@ PROJ_NAME = Cipher
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = build
+DOC_DIR = documentation
 
 SRC = src/cipher_operations.c
 
@@ -38,16 +39,16 @@ test: $(SRC) $(TEST_SRC)
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage project_main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a $(SRC)
 
-doc:
-	make -C documentation
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-	make clean -C doc
-	rmdir $(BUILD_DIR) doc/html
+	$(RM) $(call FixPath,$(DOC_DIR)/*)
+
+
+
