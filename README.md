@@ -1,5 +1,5 @@
 # SDLC Activity Based Learning
-![Banner](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/Img_1.png)
+![Banner](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/6_ImagesAndVideos/Img_1.png)
 
 Build | Code Quality | Coverage | Valgrind
 -------|-----------|--------|---------------
