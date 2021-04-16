@@ -1,9 +1,9 @@
 # SDLC Activity Based Learning
 ![Banner](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/1_Requirements/Img_1.png)
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
+Build | Code Quality | Coverage | Valgrind
 -------|-----------|--------|---------------
-To be added| To be added | To be added | To be added
+[![C Build](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/c-build.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/c-build.yml)| [![Code Quality - Static Code - Cppcheck](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/cppcheck.yml) | [![CI-Coverage](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/gcov.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/gcov.yml) | [![Valgrind](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/valgrind.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/valgrind.yml)
 
 ## Folder Structure
 Folder             | Description
@@ -24,3 +24,11 @@ SF Id. |  Name   |    Features    |
 ## Learning Resources
 
 1.[Basics of markdown](https://guides.github.com/features/mastering-markdown/)
+
+2.[Caesar cipher - I ](https://en.wikipedia.org/wiki/Caesar_cipher)
+
+3.[Caesar cipher - II ](https://www.geeksforgeeks.org/caesar-cipher-in-cryptography/)
+
+4.[Vigenere cipher](https://www.geeksforgeeks.org/vigenere-cipher/)
+
+5.[Playfair Cipher](https://en.wikipedia.org/wiki/Playfair_cipher)
