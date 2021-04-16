@@ -1,9 +1,9 @@
 # SDLC Activity Based Learning
 ![Banner](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/blob/master/6_ImagesAndVideos/Img_1.png)
 
-Build | Code Quality | Coverage | More
--------|-----------|--------|---------------
-[![C Build](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/c-build.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/c-build.yml)| [![Code Quality - Static Code - Cppcheck](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/cppcheck.yml) [![Valgrind](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/valgrind.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/valgrind.yml)| [![CI-Coverage](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/gcov.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/gcov.yml) | To be added
+Build | Code Quality | Coverage | Unit Testing | More
+-------|-----------|--------|---------------|-----------
+[![C Build](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/c-build.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/c-build.yml)| [![Code Quality - Static Code - Cppcheck](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/cppcheck.yml) [![Valgrind](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/valgrind.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/valgrind.yml)| [![CI-Coverage](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/gcov.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/gcov.yml) | [![Unit Testing - Unity](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/unit_test.yml/badge.svg)](https://github.com/NalinBharathiEaswaramoorthy/StepIn_MiniProject_C/actions/workflows/unit_test.yml) | To be added
 
 ## Folder Structure
 Folder             | Description
