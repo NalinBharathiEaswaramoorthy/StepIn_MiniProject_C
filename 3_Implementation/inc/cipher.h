@@ -47,7 +47,7 @@ message Vigenere_Cipher(message input_data);
  * 
  * @param s 
  */
-void strupr ( char *string );
+void strupper ( char *string );
 
 /**
  * @brief 

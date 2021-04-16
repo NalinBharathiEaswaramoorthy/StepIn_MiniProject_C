@@ -37,7 +37,7 @@ void remove_space(char *string)
 	string[j] = '\0';
 }
 
-void strupr ( char *string )
+void strupper ( char *string )
 {
     while( *string )
     {
@@ -50,8 +50,8 @@ message Vigenere_Cipher(message input_data)
 {
     remove_space(input_data.plain_text);
     remove_space(input_data.key);
-    strupr(input_data.plain_text);
-    strupr(input_data.key);
+    strupper(input_data.plain_text);
+    strupper(input_data.key);
     int pt_length = strlen(input_data.plain_text)-1; //-1 to remove the \n character added by fgets
     int kw_length = strlen(input_data.key)-1,i,j;
     if(kw_length > pt_length)
@@ -73,7 +73,7 @@ message Vigenere_Cipher(message input_data)
 message Playfair_Cipher(message input_data)
 {
     remove_space(input_data.key);
-    strupr(input_data.key);
+    strupper(input_data.key);
     strcpy(input_data.cipher_text,"Sorry! Feature Under Construction");
     return input_data;
 }
