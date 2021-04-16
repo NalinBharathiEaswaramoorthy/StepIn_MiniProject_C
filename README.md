@@ -13,7 +13,7 @@ Folder             | Description
 `3_Implementation` | All code and documentation
 `4_Test_plan`      | Documents with test plans
 
-## Concepts Used
+## Concepts and Approach Used
 * Structures
 * Arrays
 * Unions
@@ -21,6 +21,31 @@ Folder             | Description
 * Multi-file approach
 * Unity Test Framework
 * Makefile 
+
+## Requirements
+* Unity Framework Library
+* MakeFile Configuration
+* Mingw-w64(64/32 bit)
+* gcc compiler
+* Additional Visual studio code extension
+  * Extension C/C++
+  * Doxygen Extension
+  * C/C++ Debugger Configuration
+  * Code Runner
+* Code Coverage
+* CppCheck(Static memory analysis)
+* Valgrind(Dynamic memory analysis)
+* Git-2.31.0-64-bit
+
+## Instructions to Run the Project
+* Clone the repository to the local machine
+* Open CMD(Windows)/Terminal(Linux) and navigate to the 3_Implementation folder
+* Commands:
+  * Compile: Use **make** command
+  * Execute: Use **make run** command
+  * Unit Testing: Use **make test** command
+  * Code Coverage: Use **make coverage** command
+* Follow instructions displayed on screen while the code is running
 
 ## Contributors List and Summary
 
