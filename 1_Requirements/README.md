@@ -5,7 +5,7 @@
 * It has various aspects such as authentication, data integrity and data confidentiality.
 * Modern day cryptography is very complex and is an interdisplinary topic that includes mathematics, computer science, electrical engineering and many more.
 * In this mini-project, certain simple substitution cryptography techniques will be implemented using C programming.
-* In substitution ciphering techniques plaintext is converted to ciphertext in a defined manner using a key; a unit may be single letter, pair of letters or more.
+*  In substitution ciphering techniques plaintext is converted to ciphertext in a defined manner using a key; a unit may be single letter, pair of letters or more.
 * Some examples of substitution ciphers are Caesar cipher, Vigenere cipher and Playfair cipher
 
 ## Research
@@ -32,19 +32,19 @@ This ciphering technique treats every two letters of the plaintext as a block an
 
 ## 4W's & 1H
 
-### Who:
+### Who
 * Anybody interested in encoding and decoding messages/cryptography
 
-### What:
+### What
 * Quickly encrypts messages accurately. It is more reliable than manual encryption that is tedious and error prone
 
-### When:
-* Substitution cipher was first used in 80 BCE by Julius Caesar and is still used in modern day cryptography techniques such as AES. 
+### When
+*  Substitution cipher was first used in 80 BCE by Julius Caesar and is still used in modern day cryptography techniques such as AES. 
 
-### Why:
-* Information security,integrity and secrecy are ever prevalent needs in almost every domain.
+### Why
+*  Information security,integrity and secrecy are ever prevalent needs in almost every domain.
 
-### How:
+### How
 * This program takes the message and key as inputs that are processed as per the selected ciphering technique to provide the corresponding cipher text output
 
 # Detail requirements
